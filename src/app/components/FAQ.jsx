@@ -6,12 +6,11 @@ const faqData = [
     {
         question: "Do I keep the rights to my work?",
         answer:
-            "Yes, creators retain full ownership and rights to their original work.",
+            "Yes, creators retain full ownership and rights to their original work. \n Where appropriate, Revolt Industry may explore alternative IP arrangements, but our goal is to create partnerships that benefit both creators and the platform.",
     },
     {
-        question: "Can I publish manga and comics?",
-        answer:
-            "Absolutely. Revolt Industry supports manga, manhwa, comics and graphic stories.",
+        question: "How do creators make money?",
+        answer:   "Creators will have access to multiple monetisation opportunities, including revenue sharing, subscriptions, premium content, publishing opportunities, ad revenue, merchandise, and future adaptations.",
     },
     {
         question: "Is Revolt Industry free to use?",
@@ -19,14 +18,14 @@ const faqData = [
             "Yes, creators can join and publish content without upfront platform fees.",
     },
     {
-        question: "Can I monetize my content?",
+        question: "Can I receive upfront payments?",
         answer:
-            "Yes, monetization features are available for eligible creators.",
+            "Selected creators may receive upfront payments depending on the project, audience potential, quality, and partnership opportunities.",
     },
     {
-        question: "Do I need publishing experience?",
+        question: "What type of creators are you looking for?",
         answer:
-            "No, the platform is built for both beginners and professional creators.",
+            "We are looking for passionate creators with original ideas, unique worlds, and stories that subvert traditional tropes. Whether you are an established creator or creating your first project, we want to hear from you. Please note that, we will not be accepting reincarnation series!",
     },
 ];
 

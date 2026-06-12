@@ -351,7 +351,7 @@ img {
 
     text-align: right;
 
-    color: #fff;   
+    color: #fff;
 }
 
 
@@ -494,7 +494,8 @@ img {
 }
 
 .join-wishlist input,
-.join-wishlist button {
+.join-wishlist button
+ {
     width: 100%;
 
     padding: 14px 24px;
@@ -503,6 +504,11 @@ img {
 
     border: none;
     border-radius: 999px;
+}
+.join-wishlist button {
+    width: 70%;
+
+    
 }
 
 .join-form {
@@ -717,6 +723,11 @@ img {
     }
 
 
+    .sticky-feature-card p {
+        white-space: pre-line;
+       
+    }
+
     /* =====================================
      MOBILE ANIMATION
   ===================================== */
@@ -886,40 +897,37 @@ img {
 }
 
 .cinematic-section {
-  opacity: 0.4;
-  transform: translateY(120px) scale(0.45);
+    opacity: 0.4;
+    transform: translateY(120px) scale(0.45);
 
-  transition:
-    opacity 1.4s cubic-bezier(.22,1,.36,1),
-    transform 1.4s cubic-bezier(.22,1,.36,1);
+    transition:
+        opacity 1.4s cubic-bezier(.22, 1, .36, 1),
+        transform 1.4s cubic-bezier(.22, 1, .36, 1);
 }
 
 .cinematic-section.in-view {
-  opacity: 1;
-  transform: translateY(0) scale(1);
+    opacity: 1;
+    transform: translateY(0) scale(1);
 }
 
 @keyframes cinematic {
-  0% {
-    opacity: .4;
-    transform: translateY(150px) scale(.85);
-  }
+    0% {
+        opacity: .4;
+        transform: translateY(150px) scale(.85);
+    }
 
-  30% {
-    opacity: 1;
-    transform: translateY(0) scale(1);
-  }
+    30% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
 
-  70% {
-    opacity: 1;
-    transform: translateY(0) scale(1);
-  }
+    70% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
 
-  100% {
-    opacity: .7;
-    transform: translateY(-80px) scale(.95);
-  }
+    100% {
+        opacity: .7;
+        transform: translateY(-80px) scale(.95);
+    }
 }
-
-
-

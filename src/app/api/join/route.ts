@@ -37,6 +37,20 @@ export async function POST(req: Request) {
         }
 
         // =====================
+        // Suggest for improvement
+        // =====================
+
+        if (body.type === "Suggestion") {
+
+            subject = "Suggestion for improvement";
+
+            html = `
+                <h2>Suggestion for improvement</h2>
+                <p>Suggestion: ${body.email}</p>
+            `;
+        }
+
+        // =====================
         // APPLICATION
         // =====================
 

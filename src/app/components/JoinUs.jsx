@@ -11,6 +11,7 @@ export default function JoinSection() {
     const [showSuccess, setShowSuccess] = useState(false);
     const [successMessage, setSuccessMessage] = useState("");
     const [wishlistEmail, setWishlistEmail] = useState("");
+    const [suggestionText, setSuggestionTest] = useState("");
 
     const [formData, setFormData] = useState({
         name: "",
@@ -42,6 +43,35 @@ export default function JoinSection() {
                 setSuccessMessage("Successfully joined wishlist!");
                 setShowSuccess(true);
                 setWishlistEmail("");
+            }
+        } catch (error) {
+            console.error(error);
+        }
+    };
+
+    // =========================
+    // Suggestion SUBMIT
+    // =========================
+
+    const handleSuggestion = async () => {
+        try {
+            const res = await fetch("/api/join", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify({
+                    type: "Suggestion",
+                    email: suggestionText,
+                }),
+            });
+
+            const data = await res.json();
+
+            if (data.success) {
+                setSuccessMessage("Suggestion received Successfully!!!");
+                setShowSuccess(true);
+                setSuggestionTest("");
             }
         } catch (error) {
             console.error(error);
@@ -111,8 +141,28 @@ export default function JoinSection() {
                     >
                         Join the waitlist
                     </button>
+                    
+
+                     <input
+                        type="email"
+                        placeholder="Suggest for improvement"
+                        value={suggestionText}
+                        onChange={(e) =>
+                            setSuggestionTest(e.target.value)
+                        }
+                    />
+
+                    <button
+                        type="button"
+                        onClick={handleSuggestion}
+                    >
+                        Submit
+                    </button>
+
 
                 </div>
+                
+                
 
                 {/* Main Form */}
 

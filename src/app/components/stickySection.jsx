@@ -7,47 +7,49 @@ import StickyImage from "../../assets/stickyImage.png";
 
 const featuresLeft = [
   {
-    title: "Creator Ownership",
-    text: "Artists retain intellectual property rights to their work",
+    title: "No Series Cancellation Culture",
+    text: "I am a creator too, and I understand the challenges of investing time, passion, and years into building a story. Far too often creators are forced to abandon projects before their stories have the chance to fully develop. At Revolt Industry, we believe stories deserve the time and space to grow.",
   },
   {
-    title: "Fair Compensation",
-    text: "Revenue-sharing model where creators receive a majority percentage of earnings.",
-  },
-  {
-    title: "Flexible Production Model",
-    text: "No enforced weekly deadlines. Creators set sustainable schedules.",
-  },
-  {
-    title: "Creative Freedom",
-    text: "No forced editorial changes to follow trends or tropes",
+    title: "Working Conditions",
+    text: "Most creators face intense pressure, unrealistic deadlines, and demanding schedules from their publishers; however, creativity requires time, care, and passion. Great stories should not be limited by burnout. ",
   },
   {
     title: "Global Reach",
-    text: "Future translation and localisation support to expand international audiences.",
+    text: "Amazing stories should not be limited by language or location, and Revolt Industry aims to provide translation support to help creators reach readers around the world. We will not rely on AI translations. We want to support quality translation and help fuel the translation industry once again, ensuring creators’ work is adapted with care.",
   },
+  {
+    title: "Better Working Conditions",
+    text: "Creators should be able to create without sacrificing their wellbeing. Revolt Industry aims to provide a more flexible environment where creators can work at a sustainable pace and focus on producing their best work. This will be achieved by the creator setting their own release schedule. ",
+  },
+  {
+    title: "Publishing & Beyond",
+    text: "Revolt Industry will provide digital publishing opportunities with ambitions to support physical print releases for successful works. Our vision goes beyond publishing comics. We want to help develop original intellectual properties that have the potential to expand into animation, gaming, merchandise, and other entertainment opportunities.",
+  },
+
+  
 ];
 
 const featuresRight = [
   {
-    title: "Creator Ownership",
-    text: "Artists retain intellectual property rights to their work",
-  },
-  {
-    title: "Fair Compensation",
-    text: "Revenue-sharing model where creators receive a majority percentage of earnings.",
-  },
-  {
-    title: "Flexible Production Model",
-    text: "No enforced weekly deadlines. Creators set sustainable schedules.",
-  },
-  {
     title: "Creative Freedom",
-    text: "No forced editorial changes to follow trends or tropes",
+    text: "We encourage creators to explore original ideas, take risks, and move beyond traditional formulas.There will be no unnecessary restrictions stopping creators from telling the stories they want to tell."
   },
   {
-    title: "Global Reach",
-    text: "Future translation and localisation support to expand international audiences.",
+    title: "Intellectual Property & Fair Compensation",
+    text: "Creators will retain ownership of their work. Where appropriate, Revolt Industry may explore opportunities to acquire intellectual property creating partnerships that benefit both the creator and the platform. Creators will receive a 65-80% share of revenue generated from their work depending on the creator contract. ",
+  },
+  {
+    title: "Upfront Creator Payments",
+    text: "Revolt Industry aims to support creators at different stages of their journey. We want to support creators throughout the journey towards success.",
+  },
+  {
+    title: "Creator Support Network",
+    text: "I understand how difficult it is to create manga independently. I personally spent one year drawing a single chapter. Creating a story is a huge undertaking, and creators should not feel like they have to do everything alone.",
+  },
+  {
+    title: "Marketing & Promotion",
+    text: "Creating a great comic is only half the journey as finding your audience is final push of the endeavour. Revolt Industry aims to provide marketing support by helping creators prepare promotional content, increase visibility, build communities, and connect with new readers.",
   },
 ];
 
@@ -143,7 +145,7 @@ export default function StickySection() {
 
                 <h3>{item.title}</h3>
 
-                <p>{item.text}</p>
+                <p style={{ whiteSpace: "pre-line" }}>{item.text}</p>
 
               </div>
             ) : (
