@@ -83,7 +83,6 @@ export default function LandingPage() {
     <>
       <Hero3 />
       <Introduction />
-      <Problems />
       <PublishingProblems/>
       <StickySection />      
       <FAQ />
