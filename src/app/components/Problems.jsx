@@ -6,9 +6,9 @@ import ProblemImage4 from "../../assets/hero-4.png";
 
 export default function Problems() {
     return (
-        <section className="problems cinematic-section">
-            <h1>The Problem With Traditional Publishing</h1>
-            <div className="problems-images">
+        <section className="problems">
+            <h1 className="apple-reveal delay-2">The Problem With Traditional Publishing</h1>
+            <div className="problems-images apple-reveal delay-3">
                 <img src={ProblemImage1.src} alt="Problem 1" className="problem-image" />
                 <img src={ProblemImage2.src} alt="Problem 2" className="problem-image" />
                 <img src={ProblemImage3.src} alt="Problem 3" className="problem-image" />

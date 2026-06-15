@@ -494,8 +494,7 @@ img {
 }
 
 .join-wishlist input,
-.join-wishlist button
- {
+.join-wishlist button {
     width: 100%;
 
     padding: 14px 24px;
@@ -505,10 +504,11 @@ img {
     border: none;
     border-radius: 999px;
 }
+
 .join-wishlist button {
     width: 70%;
 
-    
+
 }
 
 .join-form {
@@ -725,7 +725,7 @@ img {
 
     .sticky-feature-card p {
         white-space: pre-line;
-       
+
     }
 
     /* =====================================
@@ -897,37 +897,410 @@ img {
 }
 
 .cinematic-section {
-    opacity: 0.4;
-    transform: translateY(120px) scale(0.45);
+    opacity: 0;
+    transform: translate3d(0, 60px, 0) scale(0.96);
+    transform-origin: center center;
 
     transition:
-        opacity 1.4s cubic-bezier(.22, 1, .36, 1),
-        transform 1.4s cubic-bezier(.22, 1, .36, 1);
+        opacity 1.2s cubic-bezier(0.16, 1, 0.3, 1),
+        transform 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+
+    will-change: transform, opacity;
+    backface-visibility: hidden;
 }
 
 .cinematic-section.in-view {
     opacity: 1;
-    transform: translateY(0) scale(1);
+    transform: translate3d(0, 0, 0) scale(1);
 }
 
-@keyframes cinematic {
-    0% {
-        opacity: .4;
-        transform: translateY(150px) scale(.85);
+
+
+
+/*=========================================
+Reveal content effect
+=======================================*/
+
+/* APPLE STYLE CONTENT REVEAL */
+
+.apple-reveal {
+    opacity: 0;
+    transform: translate3d(0, 55px, 0) scale(0.985);
+    filter: blur(14px);
+
+    transition:
+        opacity 1.25s cubic-bezier(0.16, 1, 0.3, 1),
+        transform 1.25s cubic-bezier(0.16, 1, 0.3, 1),
+        filter 1.25s cubic-bezier(0.16, 1, 0.3, 1);
+
+    will-change: opacity, transform, filter;
+    backface-visibility: hidden;
+}
+
+.apple-reveal.in-view {
+    opacity: 1;
+    transform: translate3d(0, 0, 0) scale(1);
+    filter: blur(0);
+}
+
+/* Delays */
+
+.delay-1 {
+    transition-delay: 0.15s;
+}
+
+.delay-2 {
+    transition-delay: 0.3s;
+}
+
+.delay-3 {
+    transition-delay: 0.45s;
+}
+
+.delay-4 {
+    transition-delay: 0.6s;
+}
+
+.apple-image {
+    opacity: 0;
+    transform: scale(0.95);
+
+    transition:
+        opacity 1.2s cubic-bezier(0.16, 1, 0.3, 1),
+        transform 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.apple-image.in-view {
+    opacity: 1;
+    transform: scale(1);
+}
+
+
+/*=================================
+FAQ
+======================================*/
+
+@keyframes faqPopup {
+    from {
+        opacity: 0;
+        transform: translateY(40px) scale(0.96);
+        filter: blur(10px);
     }
 
-    30% {
+    to {
         opacity: 1;
         transform: translateY(0) scale(1);
+        filter: blur(0);
+    }
+}
+
+
+/*===========================================
+Problem grid
+=============================================*/
+
+.publishingProblems {
+    background: #000;
+    padding: 100px 20px;
+}
+
+.publishingContainer {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.publishingTitle {
+    text-align: center;
+    color: #fff;
+    font-size: clamp(2.5rem, 4vw, 4rem);
+    font-weight: 400;
+    margin-bottom: 60px;
+}
+
+/* ========================================
+   GRID
+======================================== */
+
+.problemGrid {
+    display: grid;
+    gap: 12px;
+
+    grid-template-columns:
+        1fr 0.9fr 1fr 1fr;
+
+    grid-template-rows:
+        auto auto;
+
+    grid-template-areas:
+        "monetisation monetisation freedom rights"
+        "working support freedom rights";
+}
+
+/* ========================================
+   CARD
+======================================== */
+
+.problemCard {
+    background: linear-gradient(135deg,
+            #f7f7f7 0%,
+            #d7d7d7 50%,
+            #8d8d8d 100%);
+
+    border-radius: 10px;
+
+    border: 1px solid rgba(255, 255, 255, 0.5);
+
+    padding: 22px;
+
+    color: #000;
+
+    box-shadow:
+        0 0 20px rgba(255, 255, 255, 0.35),
+        0 0 25px rgba(255, 255, 255, 0.18);
+
+    overflow: hidden;
+}
+
+.problemCard h3 {
+    font-size: 1.75rem;
+    font-weight: 500;
+    margin-bottom: 14px;
+}
+
+.problemCard p {
+    color: #333;
+    font-weight: 300;
+    font-style: Light;
+    font-size: 15px;
+    line-height: 145%;
+    letter-spacing: 0%;
+}
+
+/* ========================================
+   GRID AREAS
+======================================== */
+
+.monetisation {
+    grid-area: monetisation;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+}
+
+.monetisation p {
+    font-weight: 300;
+    font-style: Light;
+    font-size: 15px;
+    line-height: 145%;
+    letter-spacing: 0%;
+}
+
+.working {
+    grid-area: working;
+}
+
+.working p {
+    font-weight: 300;
+    font-style: Light;
+    font-size: 13px;
+    line-height: 160%;
+    letter-spacing: 0%;
+}
+
+.support {
+    grid-area: support;
+}
+
+.support p {
+    font-weight: 300;
+    font-style: Light;
+    font-size: 13px;
+    line-height: 160%;
+    letter-spacing: 0%;
+}
+
+.freedom {
+    grid-area: freedom;
+    display: flex;
+    flex-direction: column;
+}
+
+.freedom p {
+    font-weight: 300;
+    font-style: Light;
+    font-size: 15px;
+    line-height: 170%;
+    letter-spacing: 0%;
+}
+
+.rights {
+    grid-area: rights;
+
+    display: flex;
+    flex-direction: column;
+}
+
+/* ========================================
+   IMAGES
+======================================== */
+
+.cardContent {
+    flex: 1;
+}
+
+.sideImage {
+    width: 120px;
+    height: auto;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+.topImage {
+    width: 120px;
+    height: auto;
+    object-fit: contain;
+
+    margin: 0 auto 25px;
+}
+
+.bottomImage {
+    width: 110px;
+    height: auto;
+    object-fit: contain;
+
+    margin-top: auto;
+    margin-left: auto;
+    padding-top: 20px;
+}
+
+.problemCard .image-wrapper {
+    display: grid;
+    flex-direction: column;
+    justify-content: center !important;
+}
+
+/* ========================================
+   TABLET
+======================================== */
+
+@media (max-width: 992px) {
+    .problemGrid {
+        grid-template-columns: repeat(2, 1fr);
+
+        grid-template-areas:
+            "monetisation monetisation"
+            "working support"
+            "freedom rights";
     }
 
-    70% {
+    .freedom,
+    .rights {
+        min-height: 380px;
+    }
+}
+
+/* ========================================
+   MOBILE
+======================================== */
+
+@media (max-width: 768px) {
+    .publishingProblems {
+        padding: 80px 20px;
+    }
+
+    .publishingTitle {
+        font-weight: 400;
+        font-style: Regular;
+        font-size: 28px;
+        letter-spacing: 0%;
+        text-align: center;
+        vertical-align: bottom;
+        margin-bottom: 40px;
+    }
+
+    .problemGrid {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .problemCard {
+        padding: 15px;
+        gap: 20px;
+        width: 100%;
+        height: auto;
         opacity: 1;
-        transform: translateY(0) scale(1);
+        border-width: 1px;
+        border-radius: 10px;
+        box-shadow:
+            0 0 25px rgba(255, 255, 255, 0.35),
+            0 0 30px rgba(255, 255, 255, 0.18);
     }
 
-    100% {
-        opacity: .7;
-        transform: translateY(-80px) scale(.95);
+    .problemCard h3 {
+        font-weight: 200;
+        font-style: SemiBold;
+        font-size: 20px;
+        letter-spacing: 0%;
+        margin-bottom: 10px;
+    }
+
+    .problemCard p {
+        font-weight: 100;
+        font-style: Light;
+        font-size: 11px;
+    }
+
+    .freedom h3 {
+        font-weight: 200;
+        font-style: SemiBold;
+        font-size: 20px;
+        letter-spacing: 0%;
+        margin-bottom: 10px;
+    }
+
+    .freedom p {
+        font-weight: 100;
+        font-style: Light;
+        font-size: 11px;
+
+    }
+
+    .right h3 {
+        font-weight: 200;
+        font-style: SemiBold;
+        font-size: 20px;
+        letter-spacing: 0%;
+
+    }
+
+    .right p {
+        font-weight: 100;
+        font-style: Light;
+        font-size: 11px;
+    }
+
+    .monetisation, .right {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .freedom,
+    .rights {
+        min-height: auto;
+        height: auto;
+    }
+
+    .freedom {
+        display: block;
+    }
+
+
+
+
+    .sideImage,
+    .topImage,
+    .bottomImage {
+        display: none;
     }
 }

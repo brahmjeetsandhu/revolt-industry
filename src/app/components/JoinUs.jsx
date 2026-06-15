@@ -116,15 +116,15 @@ export default function JoinSection() {
     };
 
     return (
-        <section className="join-us cinematic-section">
+        <section className="join-us">
 
-            <h1>Join Revolt Industry</h1>
+            <h1 className="apple-reveal delay-2">Join Revolt Industry</h1>
 
             <div className="join-us-content">
 
                 {/* Wishlist */}
 
-                <div className="join-wishlist">
+                <div className="join-wishlist apple-reveal delay-4">
 
                     <input
                         type="email"
@@ -169,7 +169,7 @@ export default function JoinSection() {
                 <div>
 
                     <form
-                        className="join-form"
+                        className="join-form  apple-reveal delay-4"
                         onSubmit={handleFormSubmit}
                     >
 

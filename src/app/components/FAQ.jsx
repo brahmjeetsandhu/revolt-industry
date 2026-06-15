@@ -37,19 +37,19 @@ export default function FAQ() {
     };
 
     return (
-        <section className="cinematin-section"
+        <section 
             style={{
                 background: "#efefef",
                 padding: "80px 20px",
             }}
         >
-            <div 
+            <div className="apple-reveal"
                 style={{
                     maxWidth: "900px",
                     margin: "0 auto",
                 }}
             >
-                <h2 className="faq-title "
+                <h2 className="faq-title apple-reveal delay-2"
                     style={{
                         textAlign: "center",
                         fontSize: "60px",
@@ -62,7 +62,7 @@ export default function FAQ() {
             </h2>
 
             {faqData.map((faq, index) => (
-                <div
+                <div className="apple-reveal delay-4"
                     key={index}
                     onClick={() => toggleFAQ(index)}
                     style={{
@@ -94,7 +94,7 @@ export default function FAQ() {
                     </div>
 
                     {openIndex === index && (
-                        <p
+                        <p 
                             style={{
                                 fontFamily: "Lato, sans-serif",
                                 marginTop: "15px",

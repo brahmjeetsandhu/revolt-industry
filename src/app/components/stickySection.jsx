@@ -126,7 +126,7 @@ export default function StickySection() {
 
     <section className="sticky-section" ref={sectionRef}>
 
-      <h1 className="sticky-heading">
+      <h1 className="sticky-heading apple-reveal delay-2">
         What Revolt Industry Provides
       </h1>
 
@@ -143,9 +143,9 @@ export default function StickySection() {
                 className="sticky-feature-card"
               >
 
-                <h3>{item.title}</h3>
+                <h3 className=" apple-reveal delay-2">{item.title}</h3>
 
-                <p style={{ whiteSpace: "pre-line" }}>{item.text}</p>
+                <p className=" apple-reveal delay-4" style={{ whiteSpace: "pre-line" }}>{item.text}</p>
 
               </div>
             ) : (
@@ -190,9 +190,9 @@ export default function StickySection() {
                 className="sticky-feature-card"
               >
 
-                <h3>{item.title}</h3>
+                <h3 className=" apple-reveal delay-2">{item.title}</h3>
 
-                <p>{item.text}</p>
+                <p className=" apple-reveal delay-4">{item.text}</p>
 
               </div>
             ) : (
