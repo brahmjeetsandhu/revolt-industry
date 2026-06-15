@@ -5,9 +5,7 @@ import ProblemImage2 from "../../assets/problem-image3.png";
 import Image from "next/image";
 
 export default function PublishingProblems() {
-    console.log(ProblemImage1);
-
-
+    
     return (
         <section className="publishingProblems">
             <div className="publishingContainer">
@@ -34,7 +32,7 @@ export default function PublishingProblems() {
                         </div>
 
                         <Image
-                            src={ProblemImage1}
+                            src={ProblemImage2}
                             alt="Monetisation"
                             width={120}
                             height={120}
@@ -68,7 +66,7 @@ export default function PublishingProblems() {
                     {/* Creative Freedom */}
                     <div className="problemCard freedom apple-reveal delay-4">
                         <Image
-                            src={ProblemImage2}
+                            src={ProblemImage4}
                             alt="Creative Freedom"
                             width={180}
                             height={180}
@@ -89,7 +87,7 @@ export default function PublishingProblems() {
                     </div>
 
                     {/* Intellectual Property */}
-                    <div className="problemCard right apple-reveal delay-4">
+                    <div className="problemCard rights apple-reveal delay-4">
                         <h3>Intellectual Property Rights</h3>
 
                         <p>
@@ -103,10 +101,9 @@ export default function PublishingProblems() {
                         </p>
                         <div className="image-wrapper">
                         <Image
-                            src={ProblemImage4}
+                            src={ProblemImage1}
                             alt="Rights"
-                            width={110}
-                            height={110}
+                                                       
                             className="bottomImage"
                         />
                         </div>

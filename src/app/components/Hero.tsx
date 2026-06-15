@@ -6,6 +6,15 @@ import heroBg from "../../assets/hero-bg.png";
 
 import { heroSlides } from "../../data/heroSlides";
 
+import VectorIcon from "../../assets/Vector.png";
+
+import {
+  FaFacebook,
+  FaFacebookF,
+  FaInstagram,
+  FaYoutube,
+} from "react-icons/fa6";
+
 export default function Hero() {
 
   const [slides, setSlides] =
@@ -67,13 +76,33 @@ export default function Hero() {
     >
 
       {/* SOCIALS */}
-
       <div className="social-icons">
+        <a
+          href="https://facebook.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            src={VectorIcon.src}
+            alt="Facebook"
+          />
+        </a>
 
-        <a href="/">f</a>
-        <a href="/">◎</a>
-        <a href="/">▶</a>
+        <a
+          href="https://instagram.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FaInstagram />
+        </a>
 
+        <a
+          href="https://youtube.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FaYoutube />
+        </a>
       </div>
 
       {/* TEXT */}
@@ -125,7 +154,7 @@ export default function Hero() {
 
         </div>
 
-        
+
 
         {/* BUTTON */}
 

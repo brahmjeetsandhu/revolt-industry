@@ -8,6 +8,14 @@ import { heroSlides } from "../../data/heroSlides";
 
 import "./hero2.css";
 
+import VectorIcon from "../../assets/Vector.png";
+import Instagram from "../../assets/Instagram.png";
+import Youtube from "../../assets/Youtube.png";
+
+import NextBtn from "../../assets/NextBtn.png";
+
+import RotatingBadge from "../../assets/Frame 9.png";
+
 export default function Hero3() {
 
   const [slides, setSlides] =
@@ -74,9 +82,38 @@ export default function Hero3() {
 
       <div className="social-icons">
 
-        <a href="/">f</a>
-        <a href="/">◎</a>
-        <a href="/">▶</a>
+        <a
+          href="https://facebook.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            src={VectorIcon.src}
+            alt="Facebook"
+          />
+        </a>
+
+        <a
+          href="https://instagram.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            src={Instagram.src}
+            alt="Facebook"
+          />
+        </a>
+
+        <a
+          href="https://youtube.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            src={Youtube.src}
+            alt="Facebook"
+          />
+        </a>
 
       </div>
 
@@ -103,23 +140,31 @@ export default function Hero3() {
           DESKTOP SLIDER
       ===================================== */}
 
+
+
       <div className="hero-cinematic-slider desktop-slider">
 
-        {/* ACTIVE */}
+        <div className="hero-active-wrapper">
 
-        <div
-          className={`hero-active-image ${sliding ? "slide-active" : ""
-            }`}
-        >
+          {/* ACTIVE */}
 
-          <img
-            src={slides[0].image.src}
-            alt=""
-          />
+          <div
+            className={`hero-active-image ${sliding ? "slide-active" : ""
+              }`}
+          >
+
+            <img
+              src={slides[0].image.src}
+              alt=""
+            />
+
+          </div>
 
         </div>
 
         {/* NEXT */}
+
+
 
         <div
           className={`hero-next-image ${sliding ? "slide-next" : ""
@@ -132,6 +177,8 @@ export default function Hero3() {
           />
 
         </div>
+
+
 
         {/* UPCOMING */}
 
@@ -281,6 +328,14 @@ export default function Hero3() {
 
       </div>
 
+
+      
+
+      <div className="rotating-badge">
+        <img src={RotatingBadge.src} alt="Revolt Industry Limited" />
+      </div>
+
+
       {/* =====================================
           BUTTON
       ===================================== */}
@@ -289,7 +344,10 @@ export default function Hero3() {
         onClick={goNext}
         className="next-slide-btn"
       >
-        ›
+        <img
+          src={NextBtn.src}
+          alt=">"
+        />
       </button>
 
     </section>

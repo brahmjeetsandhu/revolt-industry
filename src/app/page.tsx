@@ -3,8 +3,8 @@
 import { useEffect } from "react";
 
 import Introduction from "../app/components/Introduction";
-import Problems from "../app/components/Problems";
-import PublishingProblems from "../app/components/Problems1";
+//import Problems from "../app/components/Problems";
+import Problems from "../app/components/Problems1";
 import JoinSection from "../app/components/JoinUs";
 import StickySection from "./components/stickySection";
 import Hero3 from "../app/components/Hero3";
@@ -83,7 +83,7 @@ export default function LandingPage() {
     <>
       <Hero3 />
       <Introduction />
-      <PublishingProblems/>
+      <Problems/>
       <StickySection />      
       <FAQ />
       <JoinSection />
