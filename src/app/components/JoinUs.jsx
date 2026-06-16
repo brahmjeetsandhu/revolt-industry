@@ -137,8 +137,7 @@ export default function JoinSection() {
 
                     <button
                         type="button"
-                        onClick={handleWishlist}
-                    >
+                        onClick={handleWishlist}                    >
                         Join the waitlist
                     </button>
                     
