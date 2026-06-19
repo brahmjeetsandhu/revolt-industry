@@ -66,7 +66,7 @@ export default function JoinSection() {
                 }),
             });
 
-            const data = await res.json();
+            const data = await res.json(); 
 
             if (data.success) {
                 setSuccessMessage("Suggestion received Successfully!!!");
