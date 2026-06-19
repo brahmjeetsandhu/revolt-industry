@@ -53,7 +53,7 @@ export default function JoinSection() {
     // Suggestion SUBMIT
     // =========================
 
-    const handleSuggestion = async () => {
+    const handleSuggestion = async () => { 
         try {
             const res = await fetch("/api/join", {
                 method: "POST",
