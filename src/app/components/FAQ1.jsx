@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import SectionHeading from "./SectionHeader";
 
 const faqData = [
   {
@@ -40,10 +41,11 @@ export default function FAQ() {
         padding: "80px 20px",
       }}
     >
+
       <div
-        
+
         style={{
-          maxWidth: "900px",
+          maxWidth: "1200px",
           margin: "0 auto",
         }}
       >
@@ -58,48 +60,119 @@ export default function FAQ() {
         >
           FAQ
         </h2>
+        <div className="faq-wrapper">
 
-        {faqData.map((faq, index) => (
-          <div
-            key={index}
-            className="apple-reveal delay-4"
-            onClick={() => setSelectedFAQ(faq)}
-            style={{
-              borderBottom: "1px solid #000",
-              padding: "22px 0",
-              cursor: "pointer",
-              transition: "all 0.3s ease",
-            }}
-          >
-            <div
-              style={{
-                display: "flex",
-                justifyContent: "space-between",
-                alignItems: "center",
-              }}
-            >
-              <h3
+          {/*Creator Faq*/}
+          <div className="faq-content">
+            <>
+              <SectionHeading
+                title="Creator"
+                textcolor={"#000000"} />
+            </>
+
+            {faqData.map((faq, index) => (
+              <div
+                key={index}
+                className="apple-reveal delay-4"
+                onClick={() => setSelectedFAQ(faq)}
                 style={{
-                  fontFamily: "Lato, sans-serif",
-                  fontSize: "20px",
-                  fontWeight: "400",
+                  borderBottom: "1px solid #000",
+                  padding: "22px 0",
+                  cursor: "pointer",
+                  transition: "all 0.3s ease",
                 }}
               >
-                {faq.question}
-              </h3>
 
-              <span
-                style={{
-                  fontSize: "24px",
-                  transition: "0.3s ease",
-                }}
-              >
-                ⌄
-              </span>
-            </div>
+                <div
+                  style={{
+                    display: "flex",
+                    justifyContent: "space-between",
+                    alignItems: "center",
+                  }}
+                >
+                  <h3
+                    style={{
+                      fontFamily: "Lato, sans-serif",
+                      fontSize: "20px",
+                      fontWeight: "400",
+                    }}
+                  >
+                    {faq.question}
+                  </h3>
+
+                  <span
+                    style={{
+                      fontSize: "24px",
+                      transition: "0.3s ease",
+                    }}
+                  >
+                    ⌄
+                  </span>
+                </div>
+              </div>
+            ))}
+
           </div>
-        ))}
+
+          {/*Reader Faq*/}
+          <div className="faq-content">
+            <>
+              <SectionHeading
+                title="Reader"
+                textcolor={"#000000"} />
+            </>
+
+            {faqData.map((faq, index) => (
+              <div
+                key={index}
+                className="apple-reveal delay-4"
+                onClick={() => setSelectedFAQ(faq)}
+                style={{
+                  borderBottom: "1px solid #000",
+                  padding: "22px 0",
+                  cursor: "pointer",
+                  transition: "all 0.3s ease",
+                }}
+              >
+
+                <div
+                  style={{
+                    display: "flex",
+                    justifyContent: "space-between",
+                    alignItems: "center",
+                  }}
+                >
+                  <h3
+                    style={{
+                      fontFamily: "Lato, sans-serif",
+                      fontSize: "20px",
+                      fontWeight: "400",
+                    }}
+                  >
+                    {faq.question}
+                  </h3>
+
+                  <span
+                    style={{
+                      fontSize: "24px",
+                      transition: "0.3s ease",
+                    }}
+                  >
+                    ⌄
+                  </span>
+                </div>
+              </div>
+            ))}
+
+          </div>
+
+        </div>
       </div>
+
+
+
+
+
 
       {/* FAQ POPUP */}
 
@@ -182,6 +255,8 @@ export default function FAQ() {
           </div>
         </div>
       )}
+
+
     </section>
   );
 }

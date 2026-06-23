@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import SectionHeading from "./SectionHeader";
 
 export default function JoinSection() {
 
@@ -53,7 +54,7 @@ export default function JoinSection() {
     // Suggestion SUBMIT
     // =========================
 
-    const handleSuggestion = async () => { 
+    const handleSuggestion = async () => {
         try {
             const res = await fetch("/api/join", {
                 method: "POST",
@@ -66,7 +67,7 @@ export default function JoinSection() {
                 }),
             });
 
-            const data = await res.json(); 
+            const data = await res.json();
 
             if (data.success) {
                 setSuccessMessage("Suggestion received Successfully!!!");
@@ -126,6 +127,12 @@ export default function JoinSection() {
 
                 <div className="join-wishlist apple-reveal delay-4">
 
+                    <SectionHeading
+                        title="For Creators"
+                        subtitle="Have a story to share? Submit your work and join a new generation 
+                         of creators building original worlds without boundaries."
+                        textcolor={"#ffffff"}
+                    />
                     <input
                         type="email"
                         placeholder="Enter your Email"
@@ -140,9 +147,9 @@ export default function JoinSection() {
                         onClick={handleWishlist}                    >
                         Join the waitlist
                     </button>
-                    
 
-                     <input
+
+                    <input
                         type="email"
                         placeholder="Suggest for improvement"
                         value={suggestionText}
@@ -160,15 +167,17 @@ export default function JoinSection() {
 
 
                 </div>
-                
-                
+
 
                 {/* Main Form */}
 
-                <div>
+                <div className="join-form  apple-reveal delay-4">
 
+                    <SectionHeading
+                        title="For Readers"
+                        subtitle="Help shape the future of Revolt Industry.  If you have a story suggestion, feature idea, 
+                        or feedback that you would like to see on Revolt we would be keen to hear from you. "/>
                     <form
-                        className="join-form  apple-reveal delay-4"
                         onSubmit={handleFormSubmit}
                     >
 

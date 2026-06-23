@@ -3,16 +3,20 @@ import ProblemImage4 from "../../assets/problem-image1.png";
 import ProblemImage1 from "../../assets/problem-image2.png";
 import ProblemImage2 from "../../assets/problem-image3.png";
 import Image from "next/image";
+import SectionHeading from "./SectionHeader";
 
 export default function PublishingProblems() {
-    
+
     return (
         <section className="publishingProblems">
             <div className="publishingContainer">
                 <h2 className="publishingTitle apple-reveal delay-2">
                     The Problem With Traditional Publishing
                 </h2>
-
+                <SectionHeading                    
+                    subtitle="Many creators face intense pressure, unrealistic deadlines, 
+                    and demanding schedules that can impact their creativity and ability to produce their best work..."                   
+                />
                 <div className="problemGrid">
                     {/* Monetisation */}
                     <div className="problemCard monetisation apple-reveal delay-4">
@@ -56,7 +60,7 @@ export default function PublishingProblems() {
                     <div className="problemCard support apple-reveal delay-4">
                         <h3>Lack of Support</h3>
 
-                        <p style={{lineHeight:"145%"}}>
+                        <p style={{ lineHeight: "145%" }}>
                             Many creators are left without enough support when it comes to
                             drawing, editing, publishing, marketing, growing an audience,
                             building connections, and navigating the industry.
@@ -100,12 +104,12 @@ export default function PublishingProblems() {
                             and opportunities with their intellectual property.
                         </p>
                         <div className="image-wrapper">
-                        <Image
-                            src={ProblemImage1}
-                            alt="Rights"
-                                                       
-                            className="bottomImage"
-                        />
+                            <Image
+                                src={ProblemImage1}
+                                alt="Rights"
+
+                                className="bottomImage"
+                            />
                         </div>
                     </div>
                 </div>
