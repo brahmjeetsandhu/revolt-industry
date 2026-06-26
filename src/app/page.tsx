@@ -3,7 +3,6 @@
 import { useEffect } from "react";
 
 import Introduction from "../app/components/Introduction";
-//import Problems from "../app/components/Problems";
 import Problems from "../app/components/Problems1";
 import JoinSection from "../app/components/JoinUs";
 import StickySection from "./components/stickySection";

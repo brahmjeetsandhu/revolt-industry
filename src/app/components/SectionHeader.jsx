@@ -2,15 +2,16 @@ export default function SectionHeading({
   title,
   subtitle,
   textcolor,
+  marginBottom
 }) { 
 
   return (
-    <div className="section-header" style={{ marginBottom: 16 }}>
-      <p
+    <div className="section-header" style= {{marginBottom}} >
+      <p id="title"
         style={{
           fontSize: 24,
           fontWeight: "700",
-          color: {textcolor}
+          color: textcolor
         }}
       >
         {title}

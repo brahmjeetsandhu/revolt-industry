@@ -132,6 +132,7 @@ export default function JoinSection() {
                         subtitle="Have a story to share? Submit your work and join a new generation 
                          of creators building original worlds without boundaries."
                         textcolor={"#ffffff"}
+                        marginBottom={0}
                     />
                     <input
                         type="email"
@@ -176,7 +177,8 @@ export default function JoinSection() {
                     <SectionHeading
                         title="For Readers"
                         subtitle="Help shape the future of Revolt Industry.  If you have a story suggestion, feature idea, 
-                        or feedback that you would like to see on Revolt we would be keen to hear from you. "/>
+                        or feedback that you would like to see on Revolt we would be keen to hear from you. "
+                        textcolor="#ffffff"/>
                     <form
                         onSubmit={handleFormSubmit}
                     >
