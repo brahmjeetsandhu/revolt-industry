@@ -702,6 +702,14 @@ img {
     cursor: pointer;
 }
 
+ .gif-desktop {
+        display: block;
+    }
+
+    .gif-mobile {
+        display: none;
+    }
+
 
 /* =============================================================================
    04.1 RESPONSIVE - TABLET / max-width: 1024px
@@ -751,6 +759,14 @@ img {
 
     .join-us-content {
         gap: 50px;
+    }
+
+    .gif-desktop {
+        display: block;
+    }
+
+    .gif-mobile {
+        display: none;
     }
 }
 
@@ -952,6 +968,8 @@ img {
         margin-top: 40px;
     }
 
+    
+
 }
 
 /* =============================================================================
@@ -1055,6 +1073,14 @@ img {
     .introduction {
         width: 100%;
         padding: 100px 10px 0;
+    }
+
+     .gif-desktop {
+        display: none;
+    }
+
+    .gif-mobile {
+        display: block;
     }
 
 }
@@ -1574,9 +1600,3 @@ img {
     }
 
 }
-
-/* =========================================
-   SMALL MOBILE
-========================================= */
-
-@media (max-width: 480px) {}

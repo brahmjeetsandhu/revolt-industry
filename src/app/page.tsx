@@ -8,6 +8,7 @@ import JoinSection from "../app/components/JoinUs";
 import StickySection from "./components/stickySection";
 import Hero3 from "../app/components/Hero3";
 import FAQ from "../app/components/FAQ1"
+import Rotate from "../app/components/rotateGif"
 
 export default function LandingPage() {
 
@@ -80,7 +81,8 @@ export default function LandingPage() {
 
   return (
     <>
-      <Hero3 />
+      <Rotate/>
+      {/* <Hero3 /> */}
       <Introduction />
       <Problems/>
       <StickySection />      

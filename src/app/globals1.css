@@ -28,6 +28,10 @@ img {
     display: block;
 }
 
+.hero-gif {
+    min-height: 50vh;
+}
+
 /* =========================================
    HERO
 ========================================= */
@@ -673,7 +677,6 @@ Rotator
 
 
 
-
 /* =========================================
    TABLET
 ========================================= */
@@ -723,6 +726,14 @@ Rotator
 
     .join-us-content {
         gap: 50px;
+    }
+
+    .gif-desktop {
+        display: block;
+    }
+
+    .gif-mobile {
+        display: none!important;
     }
 }
 
@@ -914,14 +925,24 @@ Rotator
         display: none !important;
     }
 
-     .join-us, .join-us-content{
-        gap:0px;
-        padding:0px;
+    .join-us,
+    .join-us-content {
+        gap: 0px;
+        padding: 0px;
         padding-top: 40px;
     }
 
-    .join-us h1{
-        margin-top:40px;
+    .join-us h1 {
+        margin-top: 40px;
+    }
+
+
+      .gif-desktop {
+        display: block;
+    }
+
+    .gif-mobile {
+        display: none;
     }
 
 }
@@ -958,9 +979,10 @@ Rotator
         height: 45vh;
     }
 
-    .join-us, .join-us-content{
-        gap:0px;
-        padding:0px;
+    .join-us,
+    .join-us-content {
+        gap: 0px;
+        padding: 0px;
         padding-top: 40px;
     }
 
@@ -972,8 +994,8 @@ Rotator
 
     .join-wishlist,
     .join-form {
-        padding-top:20;
-        padding: 5px;        
+        padding-top: 20;
+        padding: 5px;
     }
 
     .problems-images {
@@ -992,11 +1014,14 @@ Rotator
         min-width: none;
     }
 
+    .hero-gif {
+        min-height: 100vh !important;
+    }
+
 }
 
 
 #region model
-
 /* ========================================
     SUCCESS MODAL
 ========================================= */
