@@ -16,10 +16,7 @@ export default function RorateGif() {
             <img className="gif-mobile"
                 src={heroGifMob.src}
                 alt=""
-            />
-            <div className="rotating-badge">
-                <img src={RotatingBadge.src} alt="Revolt Industry Limited" />
-            </div>
+            />            
         </section>
     );
 }   
