@@ -9,6 +9,7 @@ import StickySection from "./components/stickySection";
 import Hero3 from "../app/components/Hero3";
 import FAQ from "../app/components/FAQ1"
 import Rotate from "../app/components/rotateGif"
+import RotateGif from "../app/components/rorate";
 
 export default function LandingPage() {
 
@@ -80,8 +81,9 @@ export default function LandingPage() {
 
 
   return (
-    <>
-      <Rotate/>
+    <>  
+      <RotateGif/>
+      {/*<Rotate/>*/}
       {/* <Hero3 /> */}
       <Introduction />
       <Problems/>
