@@ -1,12 +1,10 @@
 "use client";
 import heroGif from "../../assets/r-image.gif";
 import heroGifMob from "../../assets/r-image-mob.gif";
-//import RotatingBadge from "../../assets/Frame 9.png";
-import VectorIcon from "../../assets/Vector.png";
+import VectorIcon from "../../assets/facebook.png";
 import Instagram from "../../assets/Instagram.png";
-import Youtube from "../../assets/Youtube.png";
+import TikTok from "../../assets/tiktok.png";
 import { heroSlides } from "../../data/headingSlider";
-
 
 
 export default function RorateGif() {
@@ -43,18 +41,18 @@ export default function RorateGif() {
                     >
                         <img
                             src={Instagram.src}
-                            alt="Facebook"
+                            alt="Instagram"
                         />
                     </a>
 
                     <a
-                        href="https://youtube.com"
+                        href="https://tiktok.com/@revolt.industry"
                         target="_blank"
                         rel="noopener noreferrer"
                     >
-                        <img
-                            src={Youtube.src}
-                            alt="Facebook"
+                        <img 
+                            src={TikTok.src}
+                            alt="TikTok"
                         />
                     </a>
                 </div>
