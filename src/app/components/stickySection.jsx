@@ -41,7 +41,7 @@ const featuresRight = [
   },
   {
     title: "Upfront Creator Payments",
-    text: "Revolt Industry aims to support creators at different stages of their journey. We want to support creators throughout the journey towards success.",
+    text: "Revolt Industry aims to provide creators with cutting-edge technology throughout their journey. We offer innovative tools to creators to allow them to focus on creating great work and building successful comic careers.",
   },
   {
     title: "Creator Support Network",
@@ -49,7 +49,7 @@ const featuresRight = [
   },
   {
     title: "Marketing & Promotion",
-    text: "Creating a great comic is only half the journey as finding your audience is final push of the endeavour. Revolt Industry aims to provide marketing support by helping creators prepare promotional content, increase visibility, build communities, and connect with new readers.",
+    text: "Creating a great comic is only half the journey as finding your audience is the final push of the endeavour. Revolt Industry aims to provide marketing support by helping creators prepare promotional content, increase visibility, build communities, and connect with new readers.",
   },
 ];
 

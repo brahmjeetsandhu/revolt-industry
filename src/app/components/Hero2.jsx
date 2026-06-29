@@ -184,9 +184,9 @@ export default function Hero2() {
 
       <div className="social-icons">
 
-        <a href="/">f</a>
-        <a href="/">◎</a>
-        <a href="/">▶</a>
+        <a >f</a>
+        <a >◎</a>
+        <a>▶</a>
 
       </div>
 

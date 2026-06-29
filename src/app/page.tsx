@@ -8,32 +8,10 @@ import JoinSection from "../app/components/JoinUs";
 import StickySection from "./components/stickySection";
 import Hero3 from "../app/components/Hero3";
 import FAQ from "../app/components/FAQ1"
-import Rotate from "../app/components/rotateGif"
-import RotateGif from "../app/components/rorate";
+
+import Rotate from "../app/components/rorate";
 
 export default function LandingPage() {
-
-  /*  useEffect(() => {
-     
-     const sections = document.querySelectorAll(".cinematic-section");
- 
-     const observer = new IntersectionObserver(
-       (entries) => {
-         entries.forEach((entry) => {
-           if (entry.isIntersecting) {
-             entry.target.classList.add("in-view");
-           }
-         });
-       },
-       {
-         threshold: 0.15,
-       }
-     );
- 
-     sections.forEach((section) => observer.observe(section));
- 
-     return () => observer.disconnect();
-   }, []); */
 
   useEffect(() => {
     const sections = document.querySelectorAll(".cinematic-section");
@@ -82,8 +60,7 @@ export default function LandingPage() {
 
   return (
     <>  
-      <RotateGif/>
-      {/*<Rotate/>*/}
+      <Rotate/>     
       {/* <Hero3 /> */}
       <Introduction />
       <Problems/>

@@ -176,8 +176,10 @@ export default function JoinSection() {
 
                     <SectionHeading
                         title="For Readers"
-                        subtitle="Help shape the future of Revolt Industry.  If you have a story suggestion, feature idea, 
-                        or feedback that you would like to see on Revolt we would be keen to hear from you. "
+                        subtitle="Joining early secures you a discounted lifetime subscription available exclusively to
+                         our early supporters though, spaces are limited, 
+                        so don’t miss your chance to be part of the journey from the very beginning.
+                         We will keep you updated on platform development."
                         textcolor="#ffffff"/>
                     <form
                         onSubmit={handleFormSubmit}
