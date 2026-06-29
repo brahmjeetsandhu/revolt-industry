@@ -675,11 +675,9 @@ img {
 
     border: 1px solid #A8A8A8;
     border-radius: 20px;
-    background: linear-gradient(
-        180deg,
-        rgba(87, 87, 87, 0.36) 0%,
-        #4C4C4C 100%
-    ) !important;
+    background: linear-gradient(180deg,
+            rgba(87, 87, 87, 0.36) 0%,
+            #4C4C4C 100%) !important;
 }
 
 .join-wishlist input,
@@ -774,7 +772,7 @@ img {
     line-height: 100%;
     letter-spacing: 0%;
     vertical-align: bottom;
-    
+
     display: flex;
     align-items: center;
 
@@ -782,7 +780,7 @@ img {
 
     color: #fff;
     font-size: clamp(3rem, 4.8vw, 5.2rem);
-    
+
 
     opacity: 0;
     transform: translateX(-80px);
@@ -833,7 +831,38 @@ img {
         opacity: 0;
         transform: translateX(100px);
     }
+
+
 }
+
+.footer {    
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    display: flex;
+    justify-content: center;   
+}
+
+.footer-container {
+    max-width: 700px;
+    text-align: center;
+    padding-top: 10px!important;
+    padding-bottom: 10px!important;
+}
+
+.footer-container a {
+    color: #b7b7b7;
+    text-decoration: none;
+}
+
+.footer-container a :hover {
+    color: #ffffff;
+}
+
+.footer-container p {
+    color: #b7b7b7;
+    line-height: 1.7;   
+}
+
+
 
 /* =============================================================================
    04.1 RESPONSIVE - TABLET / max-width: 1024px

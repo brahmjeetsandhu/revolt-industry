@@ -10,6 +10,7 @@ import Hero3 from "../app/components/Hero3";
 import FAQ from "../app/components/FAQ1"
 
 import Rotate from "../app/components/rorate";
+import Footer from "../app/components/Footer"
 
 export default function LandingPage() {
 
@@ -67,6 +68,7 @@ export default function LandingPage() {
       <StickySection />      
       <FAQ />
       <JoinSection />
+      <Footer/>
     </>
   );
 }

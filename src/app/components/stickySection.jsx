@@ -33,7 +33,7 @@ const featuresLeft = [
 const featuresRight = [
   {
     title: "Creative Freedom",
-    text: "We encourage creators to explore original ideas, take risks, and move beyond traditional formulas.There will be no unnecessary restrictions stopping creators from telling the stories they want to tell."
+    text: "We encourage creators to explore original ideas, take risks, and move beyond traditional formulas. There will be no unnecessary restrictions stopping creators from telling the stories they want to tell."
   },
   {
     title: "Intellectual Property & Fair Compensation",
@@ -41,7 +41,7 @@ const featuresRight = [
   },
   {
     title: "Upfront Creator Payments",
-    text: "Revolt Industry aims to provide creators with cutting-edge technology throughout their journey. We offer innovative tools to creators to allow them to focus on creating great work and building successful comic careers.",
+    text: "Revolt Industry aims to support creators throughout their journey. We offer signing payments to selected creators to allow them to focus on creating great work and building their careers",
   },
   {
     title: "Creator Support Network",
