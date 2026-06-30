@@ -1,7 +1,7 @@
 "use client";
 import heroGif from "../../assets/r-image.gif";
 import heroGifMob from "../../assets/r-image-mob.gif";
-import VectorIcon from "../../assets/facebook.png";
+import discord from "../../assets/discord.png";
 import Instagram from "../../assets/Instagram.png";
 import TikTok from "../../assets/tiktok.png";
 import { heroSlides } from "../../data/headingSlider";
@@ -24,13 +24,13 @@ export default function RorateGif() {
 
                 <div className="hero-social social-icons">
                     <a
-                        href="https://facebook.com"
+                        href="https://discord.gg/nRRhSf94f"
                         target="_blank"
                         rel="noopener noreferrer"
                     >
                         <img
-                            src={VectorIcon.src}
-                            alt="Facebook"
+                            src={discord.src}
+                            alt="Discord"
                         />
                     </a>
 

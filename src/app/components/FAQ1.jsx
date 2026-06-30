@@ -26,10 +26,20 @@ const faqDataReader = [
       "Some content may be free, but others may be included in subscription or ad-supported reading models. At the very least, the first three chapters, and the latest three chapters, will be available for free. ",
   },
   {
-    question: "Help Shape Revolt Industry",
-    answer:
-      "We are looking for passionate creators with original ideas, unique worlds, and stories that subvert traditional tropes. Whether you are an established creator or creating your first project, we want to hear from you.\n\nPlease note that we will not be accepting reincarnation series.",
-  },
+  question: "What can I read on Revolt Industry?",
+  answer: (
+    <>
+      <p>You’ll discover a wide range of original stories, including:</p>
+
+      <ul>
+        <li>Mangas</li>
+        <li>Webcomics</li>
+        <li>Comics</li>
+        <li>Light novels</li>
+      </ul>
+    </>
+  ),
+}
 ];
 
 const faqDataCreator = [
@@ -271,7 +281,7 @@ export default function FAQ() {
               {selectedFAQ.question}
             </h2>
 
-            <p
+            <div
               style={{
                 fontSize: "20px",
                 lineHeight: "180%",
@@ -280,7 +290,7 @@ export default function FAQ() {
               }}
             >
               {selectedFAQ.answer}
-            </p>
+            </div>
           </div>
         </div>
       )}
