@@ -3,7 +3,36 @@
 import { useState } from "react";
 import SectionHeading from "./SectionHeader";
 
-const faqData = [
+
+const faqDataReader = [
+  {
+    question: "When will Revolt Industry launch?",
+    answer:
+      "Revolt Industry is currently in development, and we are looking to launch by the start of 2027. We are building the platform carefully to create the best possible experience for both creators and readers.",
+  },
+  {
+    question: "How will readers support creators?",
+    answer:
+      "Readers will be able to support creators through subscriptions, premium content, early releases, and other future opportunities.",
+  },
+  {
+    question: "What makes Revolt Industry different?",
+    answer:
+      "Revolt Industry is built around creators. Our goal is to give readers access to original stories while creating a fairer ecosystem where creators have more ownership and opportunity.",
+  },
+  {
+    question: "Will all comics be behind paywalls?",
+    answer:
+      "Some content may be free, but others may be included in subscription or ad-supported reading models. At the very least, the first three chapters, and the latest three chapters, will be available for free. ",
+  },
+  {
+    question: "Help Shape Revolt Industry",
+    answer:
+      "We are looking for passionate creators with original ideas, unique worlds, and stories that subvert traditional tropes. Whether you are an established creator or creating your first project, we want to hear from you.\n\nPlease note that we will not be accepting reincarnation series.",
+  },
+];
+
+const faqDataCreator = [
   {
     question: "Do I keep the rights to my work?",
     answer:
@@ -62,15 +91,15 @@ export default function FAQ() {
         </h2>
         <div className="faq-wrapper">
 
-          {/*Creator Faq*/}
+          {/*Reader Faq*/}
           <div className="faq-content">
             <>
               <SectionHeading
-                title="Creator"
+                title="Reader"
                 textcolor={"#000000"} />
             </>
 
-            {faqData.map((faq, index) => (
+            {faqDataReader.map((faq, index) => (
               <div
                 key={index}
                 className="apple-reveal delay-4"
@@ -114,15 +143,15 @@ export default function FAQ() {
 
           </div>
 
-          {/*Reader Faq*/}
+          {/*Creator Faq*/}
           <div className="faq-content">
             <>
               <SectionHeading
-                title="Reader"
+                title="Creator"
                 textcolor={"#000000"} />
             </>
 
-            {faqData.map((faq, index) => (
+            {faqDataCreator.map((faq, index) => (
               <div
                 key={index}
                 className="apple-reveal delay-4"

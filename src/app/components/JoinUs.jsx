@@ -128,12 +128,18 @@ export default function JoinSection() {
                 <div className="join-wishlist apple-reveal delay-4">
 
                     <SectionHeading
-                        title="For Creators"
-                        subtitle="Have a story to share? Submit your work and join a new generation 
-                         of creators building original worlds without boundaries."
-                        textcolor={"#ffffff"}
-                        marginBottom={0}
+                        title="For Readers"
+                        subtitle="Joining early secures you a discounted lifetime subscription available exclusively to
+                         our early supporters though, spaces are limited, 
+                        so don’t miss your chance to be part of the journey from the very beginning.
+                         We will keep you updated on platform development."
+                        textcolor="#ffffff"
+                        style={{
+                         
+                            marginBottom: -20,
+                        }}
                     />
+                    
                     <input
                         type="email"
                         placeholder="Enter your Email"
@@ -149,10 +155,19 @@ export default function JoinSection() {
                         Join the waitlist
                     </button>
 
+                    <SectionHeading
+
+                        subtitle="Help shape the future of Revolt Industry, If you have a story suggestion, feature idea or feedback that you would like to see on Revolt we would be keen to hear from you"
+                        textcolor="#ffffff"
+                        style={{
+                            marginTop: 30,
+                            marginBottom: -20,
+                        }}
+                    />
 
                     <input
                         type="email"
-                        placeholder="Suggest for improvement"
+                        placeholder="Share your suggestion"
                         value={suggestionText}
                         onChange={(e) =>
                             setSuggestionTest(e.target.value)
@@ -174,13 +189,18 @@ export default function JoinSection() {
 
                 <div className="join-form  apple-reveal delay-4">
 
-                    <SectionHeading
-                        title="For Readers"
-                        subtitle="Joining early secures you a discounted lifetime subscription available exclusively to
-                         our early supporters though, spaces are limited, 
-                        so don’t miss your chance to be part of the journey from the very beginning.
-                         We will keep you updated on platform development."
-                        textcolor="#ffffff"/>
+                     <SectionHeading
+                        title="For Creators"
+                        subtitle="Have a story to share? Submit your work and join a new generation 
+                         of creators building original worlds without boundaries."
+                        textcolor={"#ffffff"}
+                        style={{
+                            
+                            marginBottom: 60,
+                        }}
+
+                    />
+                    
                     <form
                         onSubmit={handleFormSubmit}
                     >

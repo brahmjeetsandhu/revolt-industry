@@ -11,7 +11,7 @@ export const heroSlides = [
 
     {
         id: 3,
-        titleTop: "Publish Stories Without Limits",
+        titleTop: "Create Without Boundries",
     },
 
     {

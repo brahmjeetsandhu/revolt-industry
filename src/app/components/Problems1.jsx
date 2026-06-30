@@ -14,8 +14,7 @@ export default function PublishingProblems() {
                     The Problem With Traditional Publishing
                 </h2>
                 <SectionHeading                    
-                    subtitle="Many creators face intense pressure, unrealistic deadlines, 
-                    and demanding schedules that can impact their creativity and ability to produce their best work..."                   
+                    subtitle=""                   
                 />
                 <div className="problemGrid">
                     {/* Monetisation */}
