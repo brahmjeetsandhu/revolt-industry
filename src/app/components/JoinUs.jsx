@@ -267,6 +267,7 @@ export default function JoinSection() {
                         type="button"
                         disabled={isWishlistLoading}
                         onClick={handleWishlist}
+                        style={{ cursor: isWishlistLoading ? "not-allowed" : "pointer" }}
                     >
                         {isWishlistLoading ? "Joining..." : "Join the waitlist"}
                     </button>
@@ -373,8 +374,10 @@ export default function JoinSection() {
 
                         <button
                             type="submit" disabled={isApplicationLoading}
+                            style={{ cursor: isApplicationLoading ? "not-allowed" : "pointer" }}
                         >
                             {isApplicationLoading ? "Submitting..." : "Join Now"}
+
                         </button>
 
                         {applicationError && <p className="form-error">{applicationError}</p>}

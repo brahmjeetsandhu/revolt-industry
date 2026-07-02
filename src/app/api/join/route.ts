@@ -198,7 +198,7 @@ export async function POST(req: Request) {
         // SEND EMAIL
         await transporter.sendMail({
             from: process.env.SMTP_USER,
-            to: "support@bestechsols.co.uk",
+            to: process.env.SMTP_USER, 
             subject,
             html,
         });
